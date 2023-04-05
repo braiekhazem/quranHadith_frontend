@@ -1,0 +1,87 @@
+.global-centring {
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+.sort {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 25px;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+.sort img {
+  width: 15px;
+  height: 15px;
+}
+
+.sort p {
+  margin: 2px 0;
+  font-size: 15px;
+  color: rgba(59, 59, 59, 0.645);
+}
+
+.sortBy {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: black !important;
+}
+
+.sortBy span {
+  margin-right: 15px;
+  text-transform: capitalize;
+}
+
+.sortOp {
+  width: fit-content;
+  padding: 7px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px rgba(0, 0, 0, 0.049) solid;
+}
+
+.sortOp:hover {
+  background-color: white;
+}
+
+#activeSort {
+  background-color: white;
+}
+
+.rotateSort {
+  transform: rotate(180deg);
+  transition: all 0.2s;
+}
+
+.appContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 5px;
+  height: calc(100% - (20px + 45px) + 18px);
+  margin-top: 20px;
+}
+
+.user {
+  min-width: 20%;
+  max-width: 20%;
+}
+
+.noRes{
+  font-size: 25px;
+  text-align: center;
+  padding: 0 10px;
+  line-height: 41px;
+  text-transform: capitalize;  
+}

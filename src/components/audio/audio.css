@@ -1,0 +1,141 @@
+:root {
+  --width-slide-duration: 10%;
+}
+
+.audio {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  height: 55px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PlaybackControls .cancel{
+  background-color: #eee;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.PlaybackControlsBtns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.close {
+  position: absolute;
+  right: -50px;
+}
+
+.slideDuration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.slideDuration input[type="range"] {
+  position: absolute;
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 2px;
+  background-color: black;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  position: relative;
+  -webkit-appearance: none;
+  box-sizing: content-box;
+  border: 1px solid #007db5;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+  transform: scale(1.2);
+  background: #007db5;
+}
+
+input[type="range"].durationSurah::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0;
+  width: var(--width-slide-duration);
+  height: 2px;
+  background-color: #007db5;
+  cursor: pointer;
+}
+
+.PlaybackControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PlaybackControlsBtns img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.time {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 20px;
+  display: block;
+  min-width: 60px;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+}
+
+.volume img {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+
+.duration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+}
+.btnCustom {
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btnCustom:hover {
+  background-color: #cccccc;
+}

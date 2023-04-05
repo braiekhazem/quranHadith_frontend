@@ -1,0 +1,38 @@
+.label {
+  display: block;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1px;
+  margin-left: 5px;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.inputContainer input {
+  width: 250px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.301);
+  border-radius: 8px;
+  font-size: 17px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+.inputContainer input:focus {
+  outline: none;
+}
+
+.is-invalid {
+  background-color: rgba(255, 0, 0, 0.116);
+}
+
+.error {
+  position: absolute;
+  font-size: 12px;
+  color: red;
+  top: 53px;
+  left: 10px;
+}

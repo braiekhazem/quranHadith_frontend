@@ -1,0 +1,126 @@
+.login {
+  background-color: rgba(238, 238, 238, 0.307);
+  border-radius: 10px;
+  padding: 15px;
+  min-width: 50%;
+  min-height: 50%;
+}
+
+.login .logo_icon {
+  justify-content: flex-start;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  margin-top: 10px;
+}
+
+.btn button {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #00ac64;
+  border-radius: 5px;
+  padding: 5px 13px;
+  color: white;
+  border: none;
+  font-family: inherit;
+}
+
+.btn button:hover {
+  background-color: #08ef8f;
+}
+
+.login h1 {
+  margin: 10px;
+  color: #00ff95;
+}
+
+.switch {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-transform: capitalize;
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+
+.oauth_login{
+  width: 100%;
+  margin-top: 24px;
+  
+}
+
+.oauth_login .btn {
+  width: 100%;
+  height: 52px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #c2c8d0;
+  color: #2d333a;
+  padding: 0 8px 0 52px;
+  transition: all .2s;
+  
+}
+.oauth_login .btn:hover{
+  box-shadow: inset 0 0 0 150px rgba(0,0,0,.1);
+}
+.btn_icon{
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: 26px;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+.access-alternative{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  padding: 24px 0 0;
+}
+.access-alternative span{
+  text-align: center;
+  flex: 0.2 0 auto;
+  margin: 0;
+  color: #999999;
+}
+.access-alternative::after{
+  content: "";
+  border-bottom: 1px solid #c2c8d0;
+  flex: 1 0 auto;
+  height: 0.5em;
+  margin: 0;
+}
+.access-alternative::before{
+  content: "";
+  border-bottom: 1px solid #c2c8d0;
+  flex: 1 0 auto;
+  height: 0.5em;
+  margin: 0;
+}
+
+
+

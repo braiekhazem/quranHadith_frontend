@@ -1,0 +1,140 @@
+.quran {
+  max-width: 100%;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.item {
+  width: calc((100% / 4) - 15px);
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: -1px 1px 3px -1px rgb(0 0 0 / 26%);
+  transition: all 0.2s;
+  position: relative;
+  z-index: 1;
+}
+
+.firstCol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.firstCol-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.firstCol-item span:not(.favIcon) {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #00ac6432;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #00ac64;
+}
+
+.firstCol-item img {
+  cursor: pointer;
+}
+
+.colorIcon {
+  filter: invert(41%) sepia(71%) saturate(2324%) hue-rotate(130deg)
+    brightness(95%) contrast(102%);
+}
+
+.favIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  z-index: 2;
+  position: relative;
+  filter: invert(41%) sepia(71%) saturate(2324%) hue-rotate(130deg)
+    brightness(95%) contrast(102%);
+}
+
+.favIcon span img {
+  padding: 1px !important;
+}
+
+.surah {
+  line-height: 23px;
+  max-width: 50%;
+}
+
+.surahName {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.surahNameEn {
+  font-size: 14px;
+  color: rgba(86, 86, 86, 0.622);
+  margin-top: 0;
+  margin-bottom: 7px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.item:hover {
+  transform: scale(1.08);
+}
+
+.surahContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 70px;
+}
+
+.surahSec {
+  line-height: 23px;
+  text-align: end;
+}
+
+.arabName {
+  font-size: 14px;
+}
+
+.surahNameAr {
+  text-transform: capitalize;
+}
+
+.loading {
+  animation: spinner 1.5s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textOver{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.quranLink {
+  width: calc((100% / 4) - 15px);
+}

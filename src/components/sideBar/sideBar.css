@@ -1,0 +1,42 @@
+.sideBar {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.listRoute {
+}
+
+.listRoute ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 35px;
+  row-gap: 30px;
+}
+
+/* .listRoute ul li:hover img {
+    filter: invert(41%) sepia(71%) saturate(2324%) hue-rotate(130deg)
+      brightness(95%) contrast(102%);
+  } */
+
+.setting-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* .sideBar img:hover {
+  filter: invert(41%) sepia(71%) saturate(2324%) hue-rotate(130deg)
+    brightness(95%) contrast(102%);
+  cursor: pointer;
+} */
+
+.activeLink {
+  filter: invert(41%) sepia(71%) saturate(2324%) hue-rotate(130deg)
+    brightness(95%) contrast(102%);
+}

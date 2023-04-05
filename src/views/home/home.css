@@ -1,0 +1,141 @@
+.home {
+  background-color: #edf1f4;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 20px 15px;
+  overflow: scroll;
+  padding-block-end: 80px;
+}
+
+.home::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+.sort {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 25px;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+.sort p {
+  margin: 2px 0;
+  font-size: 15px;
+  color: rgba(59, 59, 59, 0.645);
+}
+
+.sortBy {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: black !important;
+}
+
+.sortBy span {
+  margin-right: 15px;
+  text-transform: capitalize;
+}
+
+.sortOp {
+  width: fit-content;
+  padding: 7px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px rgba(0, 0, 0, 0.049) solid;
+}
+
+.sortOp:hover {
+  background-color: white;
+}
+
+#activeSort {
+  background-color: white;
+}
+
+.rotateSort {
+  transform: rotate(180deg);
+  transition: all 0.2s;
+}
+
+.appContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 5px;
+  height: calc(100% - (20px + 45px) + 18px);
+  margin-top: 20px;
+}
+
+.user {
+  align-self: flex-start;
+  padding: 10px 25px;
+}
+
+.user .section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.user .section:not(:last-child) {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eceff2;
+}
+
+.user-info {
+  line-height: 35px;
+}
+
+.user-info .photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.user-info p {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.user .first {
+  font-size: 22px;
+}
+.user .last {
+  font-size: 26px;
+  font-weight: bold;
+  max-width: 50%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.title {
+  font-size: 13px;
+  color: #53c3a3;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.lastsurah {
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.history-icon {
+  margin-top: 20px;
+}
+
+.history-icon img {
+  width: 50px;
+  height: 50px;
+  filter: invert(84%) sepia(5%) saturate(335%) hue-rotate(180deg)
+    brightness(97%) contrast(89%);
+}

@@ -1,0 +1,21 @@
+.logo_icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.logo {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.logo span:first-child {
+  margin-right: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+.logo:last-child {
+  color: #9499a4;
+}

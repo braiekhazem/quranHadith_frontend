@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'quranFont';
+  src: url('./fonts/UthmanicHafs_V20.ttf');
+}
+@font-face {
+  font-family: 'numberFont';
+  src: url('./fonts/Al\ Qalam\ Quran\ Majeed.ttf');
+}
+
+.read {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: scroll;
+  width: calc(100% - 300px);
+  flex: 1;
+  padding-block-end: 80px;
+  max-width: 550px;
+  min-width: 550px;
+  margin: 0 auto;
+}
+
+.content {
+  max-height: calc(100% - (20px + 45px) + 18px * 2);
+  height: calc(100% - (20px + 45px) + 18px * 2);
+  display: flex;
+  overflow: hidden;
+}
+
+.read::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+.icon {
+  display: block;
+  margin: 15px 25px;
+  position: absolute;
+  cursor: pointer;
+  filter: invert(76%) sepia(0%) saturate(0%) hue-rotate(241deg) brightness(98%)
+    contrast(89%);
+}
+.icon:hover {
+  filter: invert(73%) sepia(7%) saturate(4%) hue-rotate(328deg) brightness(91%)
+    contrast(50%);
+}
+
+.linesContainer .page{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  direction: rtl;
+  font-family: 'quranFont';
+}
+
+
+.linesContainer span {
+  font-size: 3vh;
+  margin: 2px 3px;
+  line-height: 4.5vh;
+}
+
+.linesContainer span:hover{
+  color: #2ca4ab;
+}
+
+#activeWord{
+  color: #2ca4ab;
+}
+
+.activeAyah{
+  background-color: #ebebeb96;
+}
+
+.surah__info{
+  font-family: 'quranFont';
+  font-size: 2.5vh;
+
+}
+
+.surah__info p{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.surah__info img{
+  width: 45vh;
+}
+
+.surah_name{
+  font-size: 4vh;
+}
+
+.page_number{
+  font-size:  1.6vh;
+  padding: 15px;
+  border-bottom: 1px solid #6666662e;
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.numberAyah{
+  font-family: "numberFont" ;
+  font-size: 3vh !important;
+}
