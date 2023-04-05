@@ -15,7 +15,7 @@ function Login() {
       const idToken = response.access_token;
       try {
         const res = await axios.post(
-          "http://localhost:8000/v1/user/oauth2callback",
+          process.env.REACT_APP_API_URL + "/user/oauth2callback",
           {
             code: idToken,
           }
