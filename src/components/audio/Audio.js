@@ -165,7 +165,7 @@ function Audio({ audioFile }) {
           </span>
           <span className="btnCustom" onClick={toggleAudio}>
             <img
-              src={audioPlay ? pause : play}
+              src={!audioRef?.current?.paused ? pause : play}
               alt="error"
               title={audioPlay ? "pause" : "play"}
             />

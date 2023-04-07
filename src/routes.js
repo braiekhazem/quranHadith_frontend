@@ -12,7 +12,7 @@ export const RenderRoutes = ({ routes = [] }) => {
   const navigate = useNavigate();
   const { pathname } = useLocation();
 
-  if (process.env.REACT_APP_BASE_NODE_ENV !== "development") {
+  if (process.env.REACT_APP_ENV !== "development") {
     console.log(process.env.REACT_APP_BASE_NODE_ENV);
     console.log = () => {};
   }

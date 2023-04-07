@@ -9,6 +9,12 @@ import { getJuz, getPage, getSurah } from "../../store/slices/surah";
 import Setting from "./components/settings/setting";
 import "./read.css";
 
+const goToSpecificAyah = (ayahaNB, page, audio, audioEle) => {
+  const ayahBeginFrom = audio.verse_timings[ayahaNB - 1]?.timestamp_from;
+  audioEle.currentTime = ayahBeginFrom / 1000;
+  audioEle.play();
+};
+
 const getPreviousAyahNb = (pages, index) => {
   let sum = 0;
   console.log(pages, index);
@@ -111,7 +117,6 @@ const Read = () => {
                     ayah?.numberInSurah ===
                     +currentAyah?.verse_key?.split(":")[1]
                 );
-                if (activePage) console.log({ activePage, nb: page?._id });
                 return (
                   <>
                     <div className="page" key={page?._id}>
@@ -123,12 +128,7 @@ const Read = () => {
                           )
                           .split(" ");
                         const nbWords = words.length;
-                        activePage &&
-                          console.log(
-                            getPages()
-                              ?.flatMap((page) => page?.ayahs)
-                              .findIndex((ay) => ay?._id === ayah?._id)
-                          );
+
                         const activeAyah =
                           activePage &&
                           getPages()
@@ -142,7 +142,18 @@ const Read = () => {
                             activeAyah &&
                             currentWord[0] === +j + 1;
                           return (
-                            <Fragment key={j}>
+                            <div
+                              key={j}
+                              onClick={() =>
+                                audio &&
+                                goToSpecificAyah(
+                                  ayah?.numberInSurah,
+                                  page,
+                                  audio,
+                                  audioElement
+                                )
+                              }
+                            >
                               <span
                                 key={v4(5)}
                                 className={
@@ -161,7 +172,7 @@ const Read = () => {
                                     .toString()}﴾`}
                                 </span>
                               )}
-                            </Fragment>
+                            </div>
                           );
                         });
                       })}
